@@ -1,0 +1,75 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context="com.example.ivanherve.myapplication.FullscreenActivity">
+
+    <!-- The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc. -->
+    <TextView
+        android:id="@+id/fullscreen_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:keepScreenOn="true"
+        android:text="Bienvenue"
+        android:textColor="#000"
+        android:textSize="50sp"
+        android:textStyle="bold" />
+
+    <!-- This FrameLayout insets its children based on system windows using
+         android:fitsSystemWindows. -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+
+        <LinearLayout
+            android:id="@+id/fullscreen_content_controls"
+            style="?metaButtonBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:orientation="horizontal"
+            tools:ignore="UselessParent">
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="95dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:text="Graphique"
+                android:textSize="10dp" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="70dp"
+                android:text="Calcule"
+                android:textSize="10dp" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="95dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="70dp"
+                android:layout_marginRight="75dp"
+                android:text="Résultats"
+                android:textSize="10dp" />
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="95dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:text="Paramètre"
+                android:textSize="10dp" />
+
+        </LinearLayout>
+    </FrameLayout>
+</FrameLayout>

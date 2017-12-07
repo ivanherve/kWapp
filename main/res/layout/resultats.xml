@@ -2,64 +2,91 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:background="#fff"
-    tools:context="com.example.ivanherve.kwapp.graphique">
+    tools:context="com.example.ivanherve.kwapp.resultats">
 
     <LinearLayout
-        android:id="@+id/graphique"
+        android:id="@+id/resultats"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:fitsSystemWindows="false"
         android:orientation="vertical">
 
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_marginLeft="7.5dp"
+            android:layout_marginRight="7.5dp"
+            android:layout_height="68dp"
+            android:layout_marginTop="20dp"
+            android:background="#40404040">
+
+            <TextView
+                android:id="@+id/textViewTitre1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:text="Consommation Actuelle"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textSize="17dp"/>
+
+            <TextView
+                android:id="@+id/textViewValeur1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="275dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/valeur"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textColor="#404040"
+                android:textSize="17dp" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_marginLeft="7.5dp"
+            android:layout_marginRight="7.5dp"
+            android:layout_height="68dp"
+            android:layout_marginTop="50dp"
+            android:background="#40404040">
+
+            <TextView
+                android:id="@+id/textViewTitre2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:text="Résultat de Calcul"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textSize="17dp" />
+
+            <TextView
+                android:id="@+id/textViewValeur2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="275dp"
+                android:layout_marginTop="20dp"
+                android:text="80 €"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textColor="#404040"
+                android:textSize="17dp" />
+
+        </FrameLayout>
+
         <TextView
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_marginLeft="7.5dp"
-            android:text="Aujourd'hui"
-            android:textColor="#000"
-            android:textSize="25sp"/>
-
-        <com.jjoe64.graphview.GraphView
-            android:layout_width="match_parent"
-            android:layout_height="125dip"
-            android:layout_margin="7.5dp"
-            android:id="@+id/graph1"
-            app:seriesData="0=5;2=5;3=0;4=2"
-            app:seriesType="line"
-            app:seriesColor="#ee0000"/>
-<!--
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_marginLeft="7.5dp"
-            android:text="Consommation moyenne"
-            android:textColor="#000"
-            android:textSize="25sp"/>
-
-        <com.jjoe64.graphview.GraphView
-            android:layout_width="match_parent"
-            android:layout_height="125dip"
-            android:layout_margin="7.5dp"
-            android:id="@+id/graph2"/>
-        -->
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_marginLeft="7.5dp"
-            android:text="Cette semaine"
-            android:textColor="#000"
-            android:textSize="25sp"/>
-
-        <com.github.mikephil.charting.charts.BarChart
-            android:layout_width="match_parent"
-            android:layout_height="300dp"
-            android:layout_margin="5dp"
-            android:id="@+id/graph2"></com.github.mikephil.charting.charts.BarChart>
-
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="italic"
+            android:textSize="20dp"
+            android:text="Pour plus de détail sur la consommation, appuyer sur Graphique juste en-dessous. \nCela indiquera vos consommations antérieurs ainsi que celle de vos différents appareils ;)"/>
 
 
     </LinearLayout>

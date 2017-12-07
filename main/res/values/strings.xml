@@ -1,5 +1,13 @@
-<?xml version="1.0" encoding="utf-8" ?>
+
 <resources>
     <string name="app_name">kWapp</string>
-    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="valeur">2032 kWh</string>
+    <string name="about">A propos</string>
+    <string name="help">Aide ?</string>
+    <string name="contact">Contact</string>
+    <string name="Parametre">Paramètre</string>
+    <string-array name="spinnerapp">
+        <item name="Frigo">frigo</item>
+        <item name="Four">four</item>
+    </string-array>
 </resources>

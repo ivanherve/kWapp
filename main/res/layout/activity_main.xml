@@ -1,18 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
-    android:background="#fff"
-    tools:context="com.example.ivanherve.kwapp.parametre">
+    tools:context="com.example.ivanherve.kwapp.MainActivity">
 
-    <LinearLayout
-        android:id="@+id/parametre"
+    <FrameLayout
+        android:id="@+id/Bienvenue"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:fitsSystemWindows="false"
-        android:orientation="vertical">
+        android:layout_height="419dp"
+        android:fitsSystemWindows="true">
 
         <TextView
             android:id="@+id/fullscreen_content"
@@ -20,14 +18,13 @@
             android:layout_height="466dp"
             android:gravity="center"
             android:keepScreenOn="true"
-            android:text="Paramètre"
+            android:text="Bienvenue"
             android:textColor="#000"
             android:textSize="50sp"
             android:textStyle="bold" />
 
+    </FrameLayout>
 
-
-    </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -39,6 +36,7 @@
             xmlns:android="http://schemas.android.com/apk/res/android"
             xmlns:app="http://schemas.android.com/apk/res-auto"
             xmlns:tools="http://schemas.android.com/tools"
+            android:layout_gravity="center"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
             tools:context=".MainActivity"
@@ -47,7 +45,7 @@
 
             <Button
                 android:id="@+id/button_Graphique"
-                app:layout_widthPercent="25%"
+                app:layout_widthPercent="33%"
                 android:layout_height="wrap_content"
                 android:layout_gravity="bottom"
                 android:text="Graphique"
@@ -56,7 +54,7 @@
 
             <Button
                 android:id="@+id/button_Calcul"
-                app:layout_widthPercent="25%"
+                app:layout_widthPercent="33%"
                 android:layout_height="wrap_content"
                 android:layout_toRightOf="@id/button_Graphique"
                 android:layout_gravity="bottom"
@@ -66,14 +64,14 @@
 
             <Button
                 android:id="@+id/button_Resultats"
-                app:layout_widthPercent="25%"
+                app:layout_widthPercent="33%"
                 android:layout_height="wrap_content"
                 android:layout_toRightOf="@id/button_Calcul"
                 android:layout_gravity="bottom"
                 android:text="Résultats"
                 android:textSize="10dp"
                 android:onClick="onClickResultats"/>
-
+<!--
             <Button
                 android:id="@+id/button_Parametre"
                 app:layout_widthPercent="25%"
@@ -83,7 +81,7 @@
                 android:text="Paramètre"
                 android:textSize="10dp"
                 android:onClick="onClickParametre"/>
-
+            -->
         </android.support.percent.PercentRelativeLayout>
 
     </LinearLayout>
